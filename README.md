@@ -1,3 +1,5 @@
+Live Demo - https://galactic-archives-flutter.vercel.app/
+
 # Galactic Archives
 
 A small Flutter app I built for my university midterm. It is a Star Wars inspired ship hangar where you can browse, add, and delete starships.
