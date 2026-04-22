@@ -1,6 +1,6 @@
 {
-    "name": "flutterr",
-    "short_name": "flutterr",
+    "name": "my_app",
+    "short_name": "my_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
