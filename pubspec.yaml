@@ -38,6 +38,11 @@ dependencies:
   google_fonts: ^6.2.1
   firebase_core: ^4.11.0
   flutter_dotenv: ^6.0.1
+  firebase_auth: ^6.5.3
+  cloud_firestore: ^6.6.0
+  provider: ^6.1.5+1
+  dio: ^5.9.2
+  lottie: ^3.3.3
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +68,9 @@ flutter:
 
   assets:
     - .env
+    - assets/products/
+    - assets/characters/
+    - assets/lottie/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
