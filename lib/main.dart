@@ -1,22 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-import 'screens/home_shell.dart';
-import 'theme/app_theme.dart';
+import 'app.dart';
+import 'services/firebase_service.dart';
 
-void main() {
-  runApp(const GalacticArchivesApp());
-}
-
-class GalacticArchivesApp extends StatelessWidget {
-  const GalacticArchivesApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Galactic Archives',
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.build(),
-      home: const HomeShell(),
-    );
-  }
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: '.env');
+  await FirebaseService.init();
+  runApp(const App());
 }
